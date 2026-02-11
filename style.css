@@ -1,21 +1,43 @@
+/* Custom Font & Utilities */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
 
 body {
     font-family: 'Inter', sans-serif;
     background-color: #1c1d20;
-    cursor: default;
     color: white;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    cursor: default;
 }
 
+/* Hide Scrollbar but keep functionality */
 .scrollbar-hide::-webkit-scrollbar {
     display: none;
 }
+
 .scrollbar-hide {
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
 
+/* Custom Selection Color */
 ::selection {
     background-color: #455CE9;
     color: white;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Image Transitions */
+img {
+    transition: filter 0.3s ease;
+}
+
+/* Link Hover Transitions */
+a, button {
+    transition: all 0.3s ease;
 }
